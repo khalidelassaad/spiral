@@ -11,7 +11,7 @@ X, Y = 0, 0
 C = 0
 
 def is_prime(num):
-    for x in range(2,num//2+1):
+    for x in range(2,int(num**0.5)+1):
         if num % x == 0:
             return False
     return True
